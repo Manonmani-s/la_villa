@@ -67,7 +67,6 @@ body.luxury {
             }
         }
 
-        .aside-info {}
 
         form {
             display: flex;
@@ -89,11 +88,19 @@ body.luxury {
             }
 
             button {
-
                 padding: .65rem;
                 color: $light-color;
                 font-weight: bold;
                 border: none;
+                cursor: pointer;
+                transition: .6s;
+
+            }
+
+            button:hover {
+                color: $dark-color;
+                background-color: $gold-color;
+
 
             }
         }
@@ -108,7 +115,7 @@ body.luxury {
     & h2 {
         width: 80%;
         margin: 0 auto;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         padding-top: 1.5rem;
         text-align: center;
         text-transform: uppercase;
