@@ -20,6 +20,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'fbw39';
+  color: #333;
+}
+
+i {
+  color: unset;
+}
+
+.fab {
+  font-weight: 900;
 }
 
 #home {
@@ -51,7 +60,7 @@
 
 #home .offer {
   position: absolute;
-  background-color: #e29e20;
+  background-color: #e9ae40;
   padding: 2rem;
   text-align: center;
   line-height: 1.5rem;
@@ -71,6 +80,7 @@
 }
 
 #home .logo {
+  position: relative;
   margin: 4rem 2.5rem 0 0;
   text-align: right;
   padding: .5rem;
@@ -79,6 +89,17 @@
 
 #home .logo img {
   width: 250px;
+}
+
+#home .logo::after {
+  content: 'DESIGN';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  font-size: 2rem;
+  color: #e9ae40;
+  opacity: .8;
 }
 
 nav {
@@ -236,15 +257,14 @@ nav .link ul a:hover {
 
 .bg_info h2 {
   text-transform: uppercase;
-  color: #e29e20;
+  color: #e9ae40;
   padding: 1rem 0 0 0;
   font-weight: bold;
 }
 
 .bg_info p {
-  color: grey;
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   padding: .5rem;
   text-align: justify;
 }
@@ -266,7 +286,7 @@ footer .map img {
 
 footer .map .footer_info {
   position: absolute;
-  background-color: #e29e20;
+  background-color: #e9ae40;
   align-items: center;
   width: 100%;
   opacity: .9;
@@ -279,6 +299,7 @@ footer .map .footer_info {
 
 footer .map .footer_info p {
   padding: .5rem;
+  color: inherit;
 }
 
 footer .map .footer_info .social {

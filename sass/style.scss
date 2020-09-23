@@ -26,6 +26,13 @@
 }
 
 // styling  Menu part with logo 
+i {
+    color: unset;
+}
+
+.fab {
+    font-weight: 900;
+}
 
 #home {
     height: 100vh;
@@ -81,7 +88,7 @@
     }
 
     .logo {
-
+        position: relative;
         margin: 4rem 2.5rem 0 0;
         //justify-self: flex-end;
         // background-color: #fff;
@@ -92,6 +99,18 @@
         // opacity: .6;
         & img {
             width: 250px;
+        }
+
+        &::after {
+            content: 'DESIGN';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translateY(100%);
+            font-size: 2rem;
+            color: $footer_color;
+            opacity: .8;
+
         }
 
     }
@@ -329,6 +348,7 @@ footer {
 
             p {
                 padding: .5rem;
+                color: inherit;
             }
 
             // Styling the social media links inside the footer
