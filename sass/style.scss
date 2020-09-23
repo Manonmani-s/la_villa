@@ -119,6 +119,7 @@ nav {
             color: $light-color;
             margin: .25rem;
             border-radius: .25rem;
+            text-decoration: none;
         }
     }
 
@@ -173,13 +174,13 @@ nav {
     }
 
     .images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        display: flex;
+        // grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
 
         img {
             width: 320px;
-            height: 320px;
+            height: 300px;
             border-radius: .5rem;
             cursor: pointer;
         }
@@ -187,7 +188,6 @@ nav {
         img:hover {
             background-color: #fff;
             opacity: .6;
-            transform: scale(1.0);
             transition: 1s;
         }
     }

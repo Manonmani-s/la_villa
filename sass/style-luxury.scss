@@ -31,6 +31,7 @@ body.luxury {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        // background: linear-gradient(to right();
         z-index: -2;
         transform: scaleX(-1);
     }
@@ -38,14 +39,15 @@ body.luxury {
     aside {
         position: relative;
         width: 35%;
-        padding-top: 3.5rem;
+        // padding-top: 2.5rem;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         text-align: center;
 
         // background: linear-gradient(to right, #fff);
-        background-color: white;
+        background: linear-gradient(to right, rgb(254, 254, 255) 0%, rgb(255, 255, 255) 35%, rgb(248, 248, 248) 100%);
+        // linear-gradient(to right, blue 0%, white 90%),
 
         .logo {
             text-align: right;
@@ -72,5 +74,91 @@ body.luxury {
                 width: 200px;
             }
         }
+
+        .aside-info {}
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin: 0 auto;
+
+
+            input {
+                outline: none;
+                border: none;
+                padding: .65rem;
+                margin: .25rem 0;
+                background-color: rgb(167, 167, 172);
+            }
+
+            ::placeholder {
+                color: black;
+            }
+
+            button {
+
+                padding: .65rem;
+                color: $light-color;
+                font-weight: bold;
+                border: none;
+
+            }
+        }
+    }
+}
+
+// Styling Lux-image -gallery
+#lux-image-gallery {
+    width: 80%;
+    margin: 0 auto;
+
+    & h2 {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+        padding-top: 1.5rem;
+        text-align: center;
+
+        .header-subtitle {
+            font-weight: normal;
+        }
+    }
+
+    & p {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1.5rem 0;
+        text-align: center;
+
+
+        em {
+            font-weight: bold;
+            font-style: normal;
+        }
+
+    }
+
+    & .images {
+        display: flex;
+        justify-content: space-around;
+
+        img {
+            width: 320px;
+            height: 300px;
+            border-radius: .5rem;
+            cursor: pointer;
+        }
+
+        img:last-child {
+            transform: scaleX(-1);
+        }
+
+        img:hover {
+            background-color: #fff;
+            opacity: .6;
+            transition: 1s;
+        }
+
     }
 }
