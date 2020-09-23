@@ -22,6 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'fbw39';
+    color: $default-text-color;
 }
 
 // styling  Menu part with logo 
@@ -285,9 +286,8 @@ nav {
     }
 
     p {
-        color: $font-color;
         line-height: 1.5rem;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
         padding: .5rem;
         text-align: justify;
 
