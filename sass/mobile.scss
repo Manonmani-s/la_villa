@@ -6,7 +6,7 @@
     #home {
         & .offer {
             padding: 1rem;
-            line-height: 1rem;
+            line-height: 1.1rem;
             font-size: 1.2rem;
             opacity: .9;
 
@@ -57,15 +57,9 @@
             }
 
             & a {
-
                 padding: 0.4rem 1rem;
                 margin: .25rem;
-
                 font-size: 1rem;
-
-
-
-
             }
 
             & a:hover {
@@ -122,6 +116,7 @@
                 text-align: center;
                 text-transform: uppercase;
                 line-height: 1.4rem;
+                font-size: 1.2rem;
             }
 
             & p {
@@ -133,29 +128,28 @@
         & .form {
 
             &>div {
-                margin: 1rem;
+                margin: 1.5rem;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
 
-                justify-content: flex-start;
 
+                & label {
 
-                &.furniture {
-                    & label {
+                    padding: 0 1rem;
+                    width: 90%;
 
-                        padding: 0 1rem;
-                    }
                 }
+
 
                 & input {
                     margin-top: .5rem;
                     width: 90%;
+
                     padding: .5rem;
                 }
 
                 & button {
-
                     width: 90%;
                     margin: 0 auto;
                     font-size: 1.2rem;
@@ -177,6 +171,7 @@
 
         h2 {
             padding: 1rem 0 0 0;
+            font-size: 1.2rem;
 
         }
 
