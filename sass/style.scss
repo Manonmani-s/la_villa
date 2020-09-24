@@ -43,6 +43,10 @@ i {
 
 }
 
+// header {
+//     display: none;
+// }
+
 #home {
     height: 100vh;
     position: relative;
@@ -121,6 +125,7 @@ nav {
     // transform: scaleX(-1);
     background-color: $dark-color-o;
     width: 100%;
+    // height: 8vh;
     display: flex;
     position: fixed;
     justify-content: space-between;
@@ -160,17 +165,21 @@ nav {
             font-weight: bold;
             opacity: .7;
             border-radius: .25rem;
-
-            transition: 1.3s;
+            transition: .7s;
         }
 
         & a:hover {
             background-color: $gold-color;
             color: $dark-color;
-            transform: scale(1.2);
+            // transform: scale(1.2);
+
         }
 
 
+    }
+
+    & .hmenu {
+        display: none;
     }
 
 
@@ -282,6 +291,8 @@ nav {
                 &:hover {
                     background-color: $font-color;
                     color: $button-bg_color;
+                    transition: .6s;
+
                 }
             }
 
