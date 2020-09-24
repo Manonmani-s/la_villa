@@ -1,0 +1,666 @@
+@font-face {
+  font-family: 'fbw39';
+  src: url(../fonts/Metropolis-Light.otf);
+}
+
+@font-face {
+  font-family: 'fbw39';
+  font-style: italic;
+  src: url(../fonts/Metropolis-LightItalic.otf);
+}
+
+@font-face {
+  font-family: 'fbw39';
+  font-weight: bold;
+  src: url(../fonts/Metropolis-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'fbw39';
+  color: #333;
+}
+
+i {
+  color: unset;
+}
+
+.fab {
+  font-weight: 900;
+}
+
+#home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../image/interior-grande.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+  transform: scaleX(-1);
+}
+
+#home .shade {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+#home .offer {
+  position: absolute;
+  background-color: #e9ae40;
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 1.4rem;
+  opacity: .8;
+  bottom: 0;
+  width: 100%;
+}
+
+#home .offer p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#home .offer span {
+  text-transform: uppercase;
+}
+
+#home .logo {
+  position: relative;
+  margin: 4rem 2.5rem 0 0;
+  text-align: right;
+  padding: .5rem;
+}
+
+#home .logo img {
+  width: 250px;
+}
+
+#home .logo::after {
+  content: 'DESIGN';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(100%);
+  font-size: 2rem;
+  color: #e9ae40;
+  opacity: .7;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  top: 0;
+  z-index: 9999;
+}
+
+nav .contact a {
+  background-color: black;
+  opacity: .7;
+  padding: .4rem 1rem;
+  color: #fff;
+  margin: .25rem;
+  border-radius: .25rem;
+  text-decoration: none;
+}
+
+nav .link ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  right: 2rem;
+}
+
+nav .link ul a {
+  background-color: black;
+  padding: 0.4rem 1rem;
+  margin: .25rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: gold;
+  font-weight: bold;
+  opacity: .7;
+  border-radius: .25rem;
+  transition: 1.3s;
+}
+
+nav .link ul a:hover {
+  background-color: gold;
+  color: black;
+  transform: scale(1.2);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding: 2rem;
+  text-align: justify;
+  color: grey;
+}
+
+.main .images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main .images img {
+  width: 320px;
+  height: 300px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.main .images img:hover {
+  background-color: #fff;
+  opacity: .6;
+  transition: 1s;
+}
+
+#redeem_promo {
+  width: 70%;
+  margin: .5rem auto;
+  font-size: 1.3rem;
+}
+
+#redeem_promo .promo {
+  margin: 3rem;
+  color: font-color;
+  line-height: 1.5rem;
+}
+
+#redeem_promo .promo h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#redeem_promo .promop {
+  text-align: center;
+}
+
+#redeem_promo .form > div {
+  margin: 1rem;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#redeem_promo .form > div input {
+  width: 35%;
+  border: none;
+  background-color: lightgrey;
+  padding: .5rem;
+  margin-left: 1rem;
+  height: 2.5rem;
+}
+
+#redeem_promo .form > div input:focus {
+  outline: none;
+}
+
+#redeem_promo .form > div button {
+  background-color: #e4aa3e;
+  width: 35%;
+  padding: .5rem;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  outline: none;
+  height: 2.5rem;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  transition: .6s;
+}
+
+#redeem_promo .form > div button:hover {
+  background-color: grey;
+  color: #e4aa3e;
+}
+
+.bg_image {
+  width: 100%;
+  height: 50vw;
+  content: url(../image/hqdefault.jpg);
+}
+
+.bg_info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.bg_info h2 {
+  text-transform: uppercase;
+  color: #e9ae40;
+  padding: 1rem 0 0 0;
+  font-weight: bold;
+}
+
+.bg_info p {
+  line-height: 1.5rem;
+  font-size: 1.8rem;
+  padding: .5rem;
+  text-align: justify;
+}
+
+footer .map {
+  /* background-image: url("../image/Screen\ Shot\ 2018-02-07\ at\ 16.14.23.png");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center; */
+  position: relative;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+
+footer .map img {
+  width: 100%;
+  height: 90vh;
+}
+
+footer .map .footer_info {
+  position: absolute;
+  background-color: #e9ae40;
+  align-items: center;
+  width: 100%;
+  opacity: .9;
+  bottom: 0;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer .map .footer_info p {
+  padding: .5rem;
+  color: inherit;
+}
+
+footer .map .footer_info .social {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+footer .map .footer_info .social a {
+  text-decoration: none;
+  border: 1px solid white;
+  color: #fff;
+  font-weight: bold;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.luxury h1,
+body.luxury h2,
+body.luxury h3 {
+  color: #25255a;
+}
+
+body.luxury form button,
+body.luxury footer .footer_info {
+  background-color: #25255a;
+}
+
+#lux-main {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+#lux-main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background: linear-gradient(to right, white 35%, rgba(255, 255, 255, 0) 45%), no-repeat right/cover url("../image/fashion-1.jpg");
+  z-index: -2;
+  transform: scaleX(-1);
+}
+
+#lux-main aside {
+  position: relative;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+#lux-main aside .logo {
+  text-align: right;
+  margin: 2.5rem 1rem 0 0;
+  position: relative;
+}
+
+#lux-main aside .logo img {
+  width: 150px;
+}
+
+#lux-main aside .logo::after {
+  content: 'FASHION';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+#lux-main aside .aside-title {
+  text-transform: uppercase;
+}
+
+#lux-main aside .aside-title .img-title {
+  width: 200px;
+}
+
+#lux-main aside form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20% auto;
+}
+
+#lux-main aside form input {
+  outline: none;
+  border: none;
+  padding: .65rem;
+  margin: .25rem 0;
+  background-color: #a7a7ac;
+}
+
+#lux-main aside form ::placeholder {
+  color: #444;
+}
+
+#lux-main aside form button {
+  padding: .65rem;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: .6s;
+}
+
+#lux-main aside form button:hover {
+  color: black;
+  background-color: gold;
+}
+
+#lux-image-gallery {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#lux-image-gallery h2 {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#lux-image-gallery h2 .header-subtitle {
+  font-weight: normal;
+}
+
+#lux-image-gallery p {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#lux-image-gallery p em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+#lux-image-gallery .images {
+  display: flex;
+  justify-content: space-around;
+}
+
+#lux-image-gallery .images img {
+  width: 320px;
+  height: 300px;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+#lux-image-gallery .images img:last-child {
+  transform: scaleX(-1);
+}
+
+#lux-image-gallery .images img:hover {
+  background-color: #fff;
+  opacity: .6;
+  transition: 1s;
+}
+
+@media screen and (max-width: 425px) {
+  #home .offer {
+    padding: 1rem;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    opacity: .9;
+  }
+  #home .offer p {
+    width: 100%;
+  }
+  #home .logo {
+    margin: 2 3rem 0 0;
+    text-align: right;
+  }
+  #home .logo img {
+    width: 150px;
+  }
+  #home .logo::after {
+    font-size: 1rem;
+    opacity: 1;
+  }
+  nav {
+    background-color: none;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    top: 0;
+    z-index: 9999;
+  }
+  nav .contact {
+    display: none;
+  }
+  nav .link {
+    margin: auto;
+  }
+  nav .link .active {
+    display: none;
+  }
+  nav .link a {
+    padding: 0.4rem 1rem;
+    margin: .25rem;
+    font-size: 1rem;
+  }
+  nav .link a:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.2);
+  }
+  .main {
+    width: 100%;
+  }
+  .main p {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-align: justify;
+  }
+  .main .images {
+    flex-wrap: wrap;
+  }
+  .main .images img {
+    width: 90%;
+    margin: 1rem auto;
+  }
+  #redeem_promo {
+    width: 100%;
+    margin: .3rem auto;
+    font-size: 1rem;
+  }
+  #redeem_promo .promo {
+    margin: 1rem;
+    color: font-color;
+    line-height: 1rem;
+  }
+  #redeem_promo .promo h2 {
+    margin-bottom: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4rem;
+  }
+  #redeem_promo .promo p {
+    text-align: justify;
+  }
+  #redeem_promo .form > div {
+    margin: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #redeem_promo .form > div.furniture label {
+    padding: 0 1rem;
+  }
+  #redeem_promo .form > div input {
+    margin-top: .5rem;
+    width: 90%;
+    padding: .5rem;
+  }
+  #redeem_promo .form > div button {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    height: 2.5rem;
+  }
+  .bg_image {
+    height: 25vh;
+  }
+  .bg_info {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bg_info h2 {
+    padding: 1rem 0 0 0;
+  }
+  .bg_info p {
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    padding: .3rem;
+    text-align: justify;
+  }
+  footer .map {
+    opacity: 1;
+    margin-top: 1rem;
+  }
+  footer .map img {
+    width: 100%;
+    height: 60vh;
+  }
+  footer .map .footer_info p {
+    font-size: 1rem;
+  }
+  #lux-main {
+    height: 100vh;
+  }
+  #lux-main aside {
+    width: 80%;
+  }
+  #lux-main aside .logo {
+    margin: 2rem 1rem 0 0;
+  }
+  #lux-main aside .logo img {
+    width: 80px;
+  }
+  #lux-main aside .aside-title {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #lux-main aside .aside-title h1 {
+    margin: .3rem;
+    font-size: 1.2rem;
+  }
+  #lux-main aside .aside-title .img-title {
+    align-self: flex-end;
+    margin: .5rem;
+    width: 150px;
+  }
+  #lux-main aside .aside-title .img-title h3 {
+    margin-top: .3rem;
+    font-size: 1rem;
+  }
+  #lux-main aside .aside-info p {
+    padding: .35rem;
+  }
+  #lux-main aside form {
+    margin: 5% auto;
+  }
+  #lux-image-gallery {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #lux-image-gallery h2 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+  #lux-image-gallery p {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  #lux-image-gallery .images {
+    flex-wrap: wrap;
+    row-gap: 1.3rem;
+  }
+  #lux-image-gallery .images img {
+    width: 100%;
+  }
+}
