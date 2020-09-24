@@ -5,12 +5,15 @@ body.luxury {
     h1,
     h2,
     h3 {
-        color: $footer_blue_color;
+        color: $default-lux-color;
     }
 
-    form button,
+    form button {
+        background-color: $default-lux-color;
+    }
+
     footer .footer_info {
-        background-color: $footer_blue_color;
+        background-color: $footer-lux-color;
     }
 }
 
